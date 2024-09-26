@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "fire";
+    src: url("fire.ttf");
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "fire";
+}
+
+#menu {
+    flex: 0 0 300px;
+    background: linear-gradient(red, blue, green);
+    height: 100vh;
+    text-align: center;
+}
+
+.bouton {
+    width: 150px;
+    font-size: 20px;
+    background: linear-gradient(blue white, red);
+    padding: 5px;
+    border-radius: 8px;
+    cursor: crosshair;
+    box-shadow: 10px 10px 10px blue;
+    font-family: "fire";
+}
+
+#menu img {
+    width: 250px;
+}
+
+#gamezone {
+    flex: 1 1 1024px;
+    background: url("gamezone.jpg") no-repeat;
+    background-size: cover;
+}
+
+#grille {
+    margin: 100px auto
+}
+
+#grille td {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(black, white, yellow);
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+    font-size: 25px;
+}
+
+.indesirable {
+    background: url("indesirable.jpg") center/cover !important;
+    
+}
+
+.paint {
+    background: linear-gradient(black, white, yellow) !important;
+    font-size: 0 !important;
+}
+
+.flag {
+    background: url("flag.jpg") center/cover !important;
+}
+
+.paint.flag {
+    background: url("flag.jpg") center/cover !important;
+}
